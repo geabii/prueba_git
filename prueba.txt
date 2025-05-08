@@ -1,0 +1,14 @@
+DISTINTOS COMANDOS USADOS HASTA ESTE MOMENTO
+- Creación de usuario y email generales para git:
+	- usuario: git config --global user.name "tunombre"
+	- email: git config --global user.email "tuemail@gmail.com"
+- Creación de un reposiorio con init:
+	- git init prueba_git
+- Creación de usuario y email específicos para un repositorio:
+	#Primero, antes de ejecutar ningún comando deberos meternos en nuestro repositorio cimplemente haciendo "cd prueba_git"
+	- usuario: git config user.name "tunombre"
+	- email: git config user.email "tuemail@gmail.com"
+	#Básicamente serían los mismos comandos que para los generales solo que quitando "--global" y estando dentro del repositorio
+- Cambiar editor de texto de git por defecto:
+	- git config --global core.editor "neovim" <- Nombre del editor que queremos poner por defecto
+

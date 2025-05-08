@@ -11,4 +11,21 @@ DISTINTOS COMANDOS USADOS HASTA ESTE MOMENTO
 	#Básicamente serían los mismos comandos que para los generales solo que quitando "--global" y estando dentro del repositorio
 - Cambiar editor de texto de git por defecto:
 	- git config --global core.editor "neovim" <- Nombre del editor que queremos poner por defecto
-
+- Primer commit
+	- Primero añadimos nuestro archivo "git add prueba.txt"
+	- Una vez añadido podremos hacer un commit con el mensaje que queramos con "git commit -m "mensaje"
+- Ahora subiremos nuestro repositorio local a el remoto
+	#Antes de nada deberemos crear repositorios en nuestros sitios remotos, en mi caso serán GitHub y Gitea, una vez creados haremos los siguiente
+	- git remote add <nombre> <url_repositorio_remoto>
+	#Ahora para poder subir lo que tenemos en nuestro repositorio local a los rermotos deberemos hacer lo siguiente
+	- Comprobamos que se crearon correctamente "git remote -v"
+	- Comprobamos el nombre de nuestra rama local "git branch"
+	#Procedemos a hacer el push
+	- git push <nombre_que_dimos_para_el_remoto> <nombre_rama>
+	#Ya con esto podremos acceder a nuestros repositorios remotos y ver nuestro contenido
+- Para hacer un clone de nuestro repositorio a una carpeta deberemos hacer lo siguiente:
+	#Creamos otra carpeta vacía y pondremos el siguiente comando
+	- git clone <repositorio_lleno> <repositorio_vacío>
+	#Con esto clonaremos todo lo que estaba en nuestro repositorio original al nuevo.
+- Para sincronizar los cambios del repositorio original con el nuevo clonado deberemos hacer los siguiente:
+	#Nos metemos en la carpeta del repositorio clonado y desde ahí haremos "git pull <repositorio original>
